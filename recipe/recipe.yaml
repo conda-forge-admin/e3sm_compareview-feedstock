@@ -29,16 +29,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy <2.4
-    - trame >=3.12
-    - trame-rca >=2.3.1
-    - trame-vuetify >=3.1
-    - pyproj >=3.6.1
-    - netcdf4 >=1.6.5
-    - trame-dataclass >=2.0.2
-    - trame-components
-    - trame-tauri >=0.6.2
-    - pillow
-    - e3sm-quickview >=2.5.1
+    - e3sm-quickview >=2.7.7
 
 tests:
   - python:
@@ -49,7 +40,6 @@ tests:
   - requirements:
       run:
         - pip
-        - python ${{ python_min }}.*
     script:
       - compareview --help
       - quickcompare --help
